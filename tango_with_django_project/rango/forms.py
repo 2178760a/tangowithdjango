@@ -44,7 +44,9 @@ class PageForm(forms.ModelForm):
                 cleaned_data['url'] = url
 
             return cleaned_data
-        class UserForm(forms.ModelForm):
+
+
+class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
 
     class Meta:
