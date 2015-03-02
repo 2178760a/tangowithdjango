@@ -6,8 +6,8 @@
     {% block title %} about {% endblock %}
 
 
-    {% block body_block %}
-        <h1>This tutorial has been put together by Hope Albers, 2178760</h1>
+{% block body_block %}
+    You've visited the site <strong>{{ visit_count }} time(s).</strong><br/>        <h1>This tutorial has been put together by Hope Albers, 2178760</h1>
         <a href="{% url 'index' %}">Index</a><br />
-                <img src="{% static "images/studentIDpicture.jpg" %}" alt="It's me" />
+                <img src="{% static 'images/studentIDpicture.lnk' %}" alt="It's me" />
     {% endblock %}
