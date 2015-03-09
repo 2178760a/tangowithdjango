@@ -93,12 +93,12 @@ TEMPLATE_DIRS = [TEMPLATE_PATH]
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
-PASSWORD_HASHERS = (
-        'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-'django.contrib.auth.hashers.BCryptPasswordHasher',
-'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
-)
+# PASSWORD_HASHERS = (
+#         'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+# 'django.contrib.auth.hashers.BCryptPasswordHasher',
+# 'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+# 'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+# )
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
